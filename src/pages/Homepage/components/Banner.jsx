@@ -5,6 +5,9 @@ export default function Banner() {
     "/assets/images/Property1=Default.png",
     "/assets/images/Property2=Default.png",
     "/assets/images/Property3=Default.png",
+    "/assets/images/Property4=Default.JPG",
+    "/assets/images/Property5=Default.jpg",
+    "/assets/images/Property6=Default.JPG",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
