@@ -26,6 +26,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Waterfall";
+  src: url("/assets/fonts/Waterfall-Regular.ttf") 
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 @import "tailwindcss";
 #root {
   max-width: 100vw !important;

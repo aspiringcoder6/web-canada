@@ -1,6 +1,6 @@
-import Navbar from "../../keyComponents/Navbar";
-import Banner from "./components/Banner";
-import Footer from "./components/Footer";
+// import Navbar from "../../keyComponents/Navbar";
+// import Banner from "./components/Banner";
+// import Footer from "./components/Footer";
 import Graduates from "./components/Graduates";
 import Hero from "./components/Hero";
 import History from "./components/History";

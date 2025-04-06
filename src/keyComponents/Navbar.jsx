@@ -35,7 +35,7 @@ export default function Navbar() {
           <a className="nav-link" href="/highschool">
             High School Program
           </a>
-          <a className="nav-link">Language Center</a>
+          <a className="nav-link" href="/language-center">Language Center</a>
           <a
             className="nav-link"
             href="https://internationalyouthprogram.com/index.html"
