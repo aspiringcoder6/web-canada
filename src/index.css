@@ -38,3 +38,6 @@
 .nav-link {
   @apply hover:text-[#23417e] hover:underline transition-colors duration-300 font-medium underline-offset-6;
 }
+html {
+  scroll-behavior: smooth;
+}

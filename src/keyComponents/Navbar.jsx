@@ -26,9 +26,15 @@ export default function Navbar() {
       <div className="bg-white py-2 border-b-1 border-b-[#23417e]">
         <div className="w-[95%] m-auto flex items-center text-[#697ea7] justify-between">
           <img src="/assets/images/logos/oxford.png" className="w-[5%]" />
-          <a className="nav-link">Home</a>
-          <a className="nav-link">About OCC</a>
-          <a className="nav-link">High School Program</a>
+          <a className="nav-link" href="/">
+            Home
+          </a>
+          <a className="nav-link" href="/about">
+            About OCC
+          </a>
+          <a className="nav-link" href="/highschool">
+            High School Program
+          </a>
           <a className="nav-link">Language Center</a>
           <a
             className="nav-link"

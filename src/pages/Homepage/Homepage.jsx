@@ -12,8 +12,6 @@ import Testimonials from "./components/Testimonials";
 export default function Homepage() {
   return (
     <div>
-      <Navbar />
-      <Banner />
       <Hero />
       <History />
       <Programs />
@@ -21,7 +19,6 @@ export default function Homepage() {
       <Logos />
       <Graduates />
       <Testimonials />
-      <Footer />
     </div>
   );
 }
