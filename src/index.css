@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "SFUIBold";
+  src: url("/assets/fonts/sf-ui-display-bold-58646a511e3d9.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFUILight";
+  src: url("/assets/fonts/sf-ui-display-thin-58646e9b26e8b.otf")
+    format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFUINormal";
+  src: url("assets\fonts\sf-ui-display-light-58646b33e0551.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFUIMedium";
+  src: url("assets/fonts/sf-ui-display-medium-58646be638f96.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Waterfall";
+  src: url("/assets/fonts/Waterfall-Regular.ttf") 
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "tailwindcss";
+#root {
+  max-width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.nav-link {
+  @apply hover:text-[#23417e] hover:underline transition-colors duration-300 font-medium underline-offset-6;
+}
