@@ -187,8 +187,8 @@ export default function Eliteprogram() {
               className={classNames(
                 "w-full h-full absolute top-0 left-0 transition-opacity duration-500 object-cover",
                 {
-                  "opacity-100 z-10": index === currentIndex2 && fade,
-                  "opacity-0 z-0": index !== currentIndex2 || !fade,
+                  "opacity-100 z-10": index === currentIndex2 && fade2,
+                  "opacity-0 z-0": index !== currentIndex2 || !fade2,
                 }
               )}
             />
