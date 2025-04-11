@@ -1,5 +1,5 @@
-// import Navbar from "../../keyComponents/Navbar";
-// import Footer from "./components/Footer";
+import Navbar from "../../keyComponents/Navbar";
+import Footer from "./components/Footer";
 import HeroSection from "../Homepage/components/LanguageCenter/Hero"
 import LanguagePrograms from "../Homepage/components/LanguageCenter/LanguageProgram"
 import Testimonials from "../Homepage/components/LanguageCenter/Testimonials"
