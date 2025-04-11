@@ -7,6 +7,7 @@ import About from "./pages/Aboutpage/About";
 import OSSD from "./pages/OSSD/OSSD";
 import Eliteprogram from "./pages/Eliteprogram/Eliteprogram";
 import LanguageCenter from "./pages/Homepage/LanguageCenter";
+import Studentservice from "./pages/Studentservice/Studentservice";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="highschool/Elite" element={<Eliteprogram />} />
           <Route path="about" element={<About />} />
           <Route path="language-center" element={<LanguageCenter />} />
+          <Route path="student-service" element={<Studentservice/>} />
         </Route>
       </Routes>
     </>

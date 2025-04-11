@@ -43,7 +43,7 @@ export default function Navbar() {
             Camp Programs
           </a>
           <a className="nav-link">Programs Fee</a>
-          <a className="nav-link">Student Services</a>
+          <a className="nav-link" href="student-service">Student Services</a>
           <button
             className="flex items-center gap-1 text-[#23417e] border-1 border-[#23417e] py-2 px-5 rounded-3xl transition-all duration-400 ease-in-out group hover:text-white hover:bg-[#23417e]"
             style={{ fontFamily: "SFUIBold" }}
