@@ -26,14 +26,14 @@ export default function Banner() {
   };
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[50vh] md:h-[80vh] overflow-hidden">
       <div className="relative w-full h-full">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Slide ${index}`}
-            className={`absolute w-full h-full object-cover transition-all duration-500 ease-in-out ${
+            className={`absolute w-full h-full object-cover object-center transition-all duration-500 ease-in-out ${
               index === currentIndex
                 ? "opacity-100 z-20 translate-x-0"
                 : index === (currentIndex - 1 + images.length) % images.length

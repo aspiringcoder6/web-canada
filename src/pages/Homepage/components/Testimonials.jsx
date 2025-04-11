@@ -2,7 +2,7 @@ export default function Testimonials() {
   return (
     <div className="pb-30">
       <h1
-        className="text-[#23417e] text-6xl relative w-fit m-auto"
+        className="text-[#23417e] text-4xl md:text-6xl relative w-fit m-auto"
         style={{ fontFamily: "SFUIBold" }}
       >
         Testimonials
@@ -11,7 +11,7 @@ export default function Testimonials() {
           className="absolute -bottom-5 right-0 w-full"
         />
       </h1>
-      <div className="grid grid-cols-3 px-20 pt-30 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 px-5 md:px-20 pt-30 gap-5">
         <video controls>
           <source src="/assets/videos/mexico.mp4" type="video/mp4" />
         </video>

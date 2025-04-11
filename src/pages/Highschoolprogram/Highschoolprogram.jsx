@@ -17,7 +17,7 @@ export default function Highschoolprogram() {
           className="text-[#23417e] text-5xl flex items-center justify-center gap-5 relative"
           style={{ fontFamily: "SFUIBold" }}
         >
-          OSSD Program
+          OSSD PROGRAM
           <img
             src="/assets/images/orangedash.svg"
             className="absolute -bottom-4 right-0 w-[60%]"
@@ -152,6 +152,9 @@ export default function Highschoolprogram() {
             <button
               className="text-[#23417e] text-2xl flex gap-2 items-center"
               style={{ fontFamily: "SFUILight" }}
+              onClick={() => {
+                navigate("Art");
+              }}
             >
               <span className="border-[#23417e] border-2 rounded-full px-3.5 py-2 ">
                 ▶

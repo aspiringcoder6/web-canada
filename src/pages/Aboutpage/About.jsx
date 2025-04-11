@@ -1,23 +1,24 @@
 export default function About() {
   return (
     <div>
-      <div className="flex w-[80%] m-auto items-start mt-30 justify-between">
-        <div className="w-[50%]">
-          <div className="flex items-center gap-10 mb-10 m-auto">
-            <img src="assets/images/canada_up.svg" />
-            <h1
-              className="text-[#23417e] text-5xl flex items-center justify-center gap-5 relative"
-              style={{ fontFamily: "SFUIBold" }}
-            >
-              About OCC
-              <img
-                src="/assets/images/orangedash.svg"
-                className="absolute -bottom-4 right-0 w-[100%]"
-              />
-            </h1>
-          </div>
-          <div className="text-left text-[#23417e] text-0.5xl">
-            <div>
+      <div className="w-[80%] m-auto mt-30 text-[#23417e]">
+        {/* Layout for large screens */}
+        <div className="hidden lg:flex flex-row items-start justify-between">
+          <div className="w-[50%]">
+            <div className="flex items-center gap-10 mb-10 m-auto">
+              <img src="assets/images/canada_up.svg" />
+              <h1
+                className="text-[#23417e] text-4xl lg:text-5xl flex items-center justify-center gap-5 relative"
+                style={{ fontFamily: "SFUIBold" }}
+              >
+                About OCC
+                <img
+                  src="/assets/images/orangedash.svg"
+                  className="absolute -bottom-4 right-0 w-[100%]"
+                />
+              </h1>
+            </div>
+            <div className="text-left text-[#23417e] text-0.5xl">
               <p>
                 Located in the heart of Toronto, we are a private
                 international high school, which prepares students for fast
@@ -46,17 +47,81 @@ export default function About() {
               </p>
             </div>
           </div>
+          <div className="flex gap-5 items-start">
+            <img src="/assets/images/about/about1.png" />
+            <img src="/assets/images/about/about2.png" className="mt-20" />
+            <img src="/assets/images/about/about3.png" />
+          </div>
         </div>
-        <div className="flex gap-5 items-start">
-          <img src="/assets/images/about/about1.png" />
-          <img src="/assets/images/about/about2.png" className="mt-20" />
-          <img src="/assets/images/about/about3.png" />
+
+        {/* Layout for small screens */}
+        <div className="flex flex-col gap-10 lg:hidden">
+          <div className="flex items-center gap-10 mb-10 m-auto">
+            <img src="assets/images/canada_up.svg" />
+            <h1
+              className="text-[#23417e] text-4xl lg:text-5xl flex items-center justify-center gap-5 relative"
+              style={{ fontFamily: "SFUIBold" }}
+            >
+              About OCC
+              <img
+                src="/assets/images/orangedash.svg"
+                className="absolute -bottom-4 right-0 w-[100%]"
+              />
+            </h1>
+          </div>
+          {/* Section 1 */}
+          <div>
+            <img
+              src="/assets/images/about/about1lg.png"
+              className="w-full mb-3 max-lg:max-h-100 object-contain"
+            />
+            <p>
+              Located in the heart of Toronto, we are a private
+              international high school, which prepares students for fast
+              entrance into Canadian and American universities and colleges.
+              Certified by the Ontario Ministry of Education (Oxford College of
+              Canada registration number: (667315) and recognized by all North
+              American universities and colleges, we have gained a fine
+              reputation in providing secondary school credit courses (Grade 9 -
+              Grade 12) for overseas and local students. All courses offered by
+              our school have been developed in accordance with the requirements
+              of the Ontario Ministry of Education.
+            </p>
+          </div>
+
+          {/* Section 2 */}
+          <div>
+            <img
+              src="/assets/images/about/about2lg.png"
+              className="w-full mb-3 max-lg:max-h-150 object-contain"
+            />
+            <p>
+              Oxford College of Canada has a rich history of providing
+              high-quality, in-person and online education. With a commitment to
+              academic excellence and a nurturing learning environment, Oxford
+              College of Canada has been a cornerstone of education, preparing
+              students for success in a rapidly evolving world.
+            </p>
+          </div>
+
+          {/* Section 3 */}
+          <div>
+            <img
+              src="/assets/images/about/about3lg.png"
+              className="w-full mb-3 max-lg:max-h-150 object-contain"
+            />
+            <p>
+              Welcome to the future of education – a future where tradition
+              meets innovation, and where the pursuit of knowledge knows no
+              bounds.
+            </p>
+          </div>
         </div>
       </div>
       <div className="flex items-center gap-10 mb-30 w-[80%] m-auto mt-30">
         <img src="assets/images/canada_up.svg" />
         <h1
-          className="text-[#23417e] text-5xl flex items-center justify-center gap-5 relative"
+          className="text-[#23417e] text-4xl lg:text-5xl flex items-center justify-center gap-5 relative"
           style={{ fontFamily: "SFUIBold" }}
         >
           Our Campus
@@ -66,7 +131,7 @@ export default function About() {
           />
         </h1>
       </div>
-      <div className="flex w-[80%] m-auto gap-20 text-left text-[#23417e] text-0.5xl mb-30">
+      <div className="flex flex-col lg:flex-row w-[80%] m-auto gap-20 text-left text-[#23417e] text-0.5xl mb-30">
         <div>
           <p>
             Nestled within the vibrant North York area of Toronto, our
@@ -104,8 +169,11 @@ export default function About() {
         <img src="/assets/images/about/map.png" />
       </div>
       <div className="bg-[#f0f7fe] w-full py-20">
-        <div className="flex w-[80%] m-auto gap-20 text-left text-[#23417e] text-xl">
-          <img src="/assets/images/about/about4.png" />
+        <div className="flex max-md:flex-col w-[80%] m-auto gap-20 text-left text-[#23417e] text-xl">
+          <img
+            src="/assets/images/about/about4.png"
+            className="hidden md:block w-[50%]"
+          />
           <div>
             <p style={{ fontFamily: "SFUIBold" }} className="text-5xl my-15">
               Our Mission
@@ -116,10 +184,14 @@ export default function About() {
               citizens of integrity, empathy, and excellence
             </p>
           </div>
+          <img
+            src="/assets/images/about/about4.png"
+            className="block md:hidden w-full"
+          />
         </div>
       </div>
       <div className="w-full py-20 mb-30">
-        <div className="flex w-[80%] m-auto gap-20 text-left text-[#23417e] text-xl">
+        <div className="flex max-md:flex-col w-[80%] m-auto gap-20 text-left text-[#23417e] text-xl">
           <div>
             <p style={{ fontFamily: "SFUIBold" }} className="text-5xl my-15">
               Our Vision
@@ -132,7 +204,10 @@ export default function About() {
               diversity and excellence.
             </p>
           </div>
-          <img src="/assets/images/about/about5.png" />
+          <img
+            src="/assets/images/about/about5.png"
+            className="w-full md:w-[50%]"
+          />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ export default function Graduates() {
   return (
     <div className="py-30">
       <h1
-        className="text-[#23417e] text-6xl relative w-fit m-auto"
+        className="text-[#23417e] text-4xl md:text-5xl relative w-fit m-auto"
         style={{ fontFamily: "SFUIBold" }}
       >
         Our Graduates

@@ -2,14 +2,17 @@ export default function Principal() {
   return (
     <div className="w-[80%] m-auto py-30">
       <h1
-        className="text-[#23417e] text-6xl relative w-fit m-auto"
+        className="text-[#23417e] text-4xl md:text-5xl relative w-fit m-auto"
         style={{ fontFamily: "SFUIBold" }}
       >
-        Meet Our Principal
-        <img
-          src="/assets/images/orangedash.svg"
-          className="absolute -bottom-5 right-0"
-        />
+        Meet Our{" "}
+        <span className="relative">
+          Principal
+          <img
+            src="/assets/images/orangedash.svg"
+            className="absolute -bottom-5 right-0"
+          />
+        </span>
       </h1>
       <div className="mt-30 flex max-lg:flex-col lg:flex-row items-start gap-20">
         <div className="">

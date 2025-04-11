@@ -5,22 +5,25 @@ const programsData = [
     name: "High School Program",
     content:
       "At the heart of our program, providing students with an opportunity to engage with Canadian customs, traditions, and way of life through interactions with local peers and host families",
+    link: "/highschool",
   },
   {
     name: "Language Courses",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Our ESL (English as a Second Language) program is designed to enhance students’ proficiency in reading, writing, speaking, and listening, essential for success in the workplace, academia, and everyday interactions.",
+    link: "/languagecenter",
   },
   {
     name: "Camp Programs",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "International Youth Program curates diverse youth camp programs, offering students aged 8 to 17 an immersive language learning environment and the opportunity to experience the rich tapestry of cultures worldwide.",
+    link: "https://internationalyouthprogram.com/",
   },
 ];
 function Program(props) {
   return (
     <div
-      className="flex items-center justify-start border-t-1 border-[#23417e] last:border-b-1 gap-10 relative overflow-hidden mb-1"
+      className="flex items-center justify-start border-t-1 border-[#23417e] last:border-b-1 gap-10 relative overflow-hidden mb-1 py-5 max-md:px-5"
       onClick={() => {
         props.pressAction();
       }}
@@ -40,7 +43,7 @@ function Program(props) {
 
       {/* Content */}
       <p
-        className={`text-6xl ${
+        className={`text-6xl hidden md:block ${
           props.active ? "text-[#23417e]" : "text-white"
         } w-30 text-center ml-10 transition-colors duration-500 ease-in-out`}
         style={{
@@ -56,19 +59,26 @@ function Program(props) {
         <h2
           className={`${
             props.active ? "text-white" : "text-[#23417e]"
-          } text-4xl mb-5 transition-colors duration-500 ease-in-out`}
+          } text-2xl md:text-4xl mb-5 transition-colors duration-500 ease-in-out`}
           style={{ fontFamily: "SFUIBold" }}
         >
           {props.program.name}
         </h2>
-        <p className={`${props.active ? "text-white" : "text-[#23417e]"}`}>
+        <p
+          className={`${
+            props.active ? "text-white" : "text-[#23417e]"
+          } text-sm md:text-lg`}
+        >
           {props.program.content}
         </p>
       </div>
       <div
         className={`bg-white rounded-full p-5 mr-10 transition-opacity duration-500 ease-in-out ${
-          props.active ? "opacity-100" : "opacity-0"
+          props.active ? "opacity-100" : "opacity-0 hidden"
         }`}
+        onClick={() => {
+          props.linkAction();
+        }}
       >
         <img
           src="/assets/images/arrow-up-right.svg"
@@ -83,7 +93,7 @@ export default function Programs() {
   const [activeIdx, setActiveIdx] = useState(-1);
   return (
     <div className="w-[80%] m-auto">
-      <div className="flex items-center gap-10 mb-30">
+      <div className="flex items-center gap-2 md:gap-10 mb-30">
         <img src="assets/images/canada_up.svg" />
         <h1
           className="text-[#23417e] text-5xl flex items-center justify-center gap-5 relative"
@@ -96,8 +106,11 @@ export default function Programs() {
           />
         </h1>
       </div>
-      <div className="flex gap-10">
-        <img src="/assets/images/Rectangle90.png" />
+      <div className="flex flex-col lg:flex-row gap-10">
+        <img
+          src="/assets/images/Rectangle90.png"
+          className="max-lg:max-h-150 object-contain"
+        />
         <div className="grid grid-rows-3">
           {programsData.map((program, index) => {
             return (
@@ -109,6 +122,9 @@ export default function Programs() {
                   setActiveIdx(() => {
                     return index == activeIdx ? -1 : index;
                   });
+                }}
+                linkAction={() => {
+                  window.open(program.link, "_blank", "noopener,noreferrer");
                 }}
               />
             );

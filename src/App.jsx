@@ -6,6 +6,7 @@ import Highschoolprogram from "./pages/Highschoolprogram/Highschoolprogram";
 import About from "./pages/Aboutpage/About";
 import OSSD from "./pages/OSSD/OSSD";
 import Eliteprogram from "./pages/Eliteprogram/Eliteprogram";
+import Artprogram from "./pages/Artprogram/Artprogram";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/highschool" element={<Highschoolprogram />} />
           <Route path="/highschool/OSSD" element={<OSSD />} />
           <Route path="/highschool/Elite" element={<Eliteprogram />} />
+          <Route path="/highschool/Art" element={<Artprogram />} />
           <Route path="/about" element={<About />} />
         </Route>
       </Routes>

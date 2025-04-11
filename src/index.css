@@ -2,7 +2,7 @@
   font-family: "SFUIBold";
   src: url("/assets/fonts/sf-ui-display-bold-58646a511e3d9.otf")
     format("opentype");
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {

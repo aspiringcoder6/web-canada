@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="bg-[rgba(35,62,126,0.1)] py-10 overflow-hidden">
       <div className="w-[80%] m-auto relative ">
         <img src="/assets/images/logos/footerlogo.png" />
-        <div className="grid grid-cols-3 text-left text-[#23417e] mt-10 gap-2">
+        <div className="grid grid-rows-3 pb-10 md:grid-rows-1 md:grid-cols-3 text-center md:text-left text-[#23417e] mt-10 gap-2">
           <ul>
             <li style={{ fontFamily: "SFUIBold" }} className="mb-5">
               Our School
@@ -26,19 +26,19 @@ export default function Footer() {
             <li style={{ fontFamily: "SFUIBold" }} className="mb-5">
               Contact US
             </li>
-            <li className="flex items-center gap-3">
+            <li className="flex items-center max-md:justify-center gap-3">
               <img src="/assets/images/phone.png" />
               416.488.5035
             </li>
-            <li className="flex items-center gap-3">
+            <li className="flex items-center max-md:justify-center gap-3">
               <img src="/assets/images/email.png" />
               info@oxfordcollege.ca
             </li>
-            <li className="flex items-center gap-3">
+            <li className="flex items-center max-md:justify-center gap-3">
               <img src="/assets/images/globe.png" />
               www.oxfordcollege.ca
             </li>
-            <li className="flex items-center gap-3">
+            <li className="flex items-center max-md:justify-center gap-0 md:gap-3">
               <img src="/assets/images/location.png" />
               108 -155 Consumers Road, North York, ON M2J 0A3 Canada
             </li>

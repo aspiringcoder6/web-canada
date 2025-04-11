@@ -32,7 +32,7 @@ const milestonesData = [
 ];
 function Milestone(props) {
   return (
-    <div className="group relative flex items-center justify-center">
+    <div className="group relative flex items-center justify-center w-[80%] md:w-full">
       <img src={props.milestone.imgSrc} />
       <div className="absolute z-2 bottom-5 w-[90%] bg-white p-5 text-left opacity-0 transition-opacity duration-700 group-hover:opacity-100">
         <h2
@@ -72,7 +72,7 @@ export default function History() {
   return (
     <div className="py-30 bg-white z-1">
       <h1
-        className="text-[#23417e] text-5xl flex items-center justify-center gap-5 relative w-fit m-auto"
+        className="text-[#23417e] text-4xl md:text-5xl flex items-center justify-center gap-5 relative w-fit m-auto"
         style={{ fontFamily: "SFUIBold" }}
       >
         Our School History
@@ -82,8 +82,8 @@ export default function History() {
         />
       </h1>
       <p
-        className="w-[80%] m-auto text-[#23417e] mt-30 text-2xl"
-        style={{ fontFamily: "SFUINormal" }}
+        className="w-[80%] m-auto text-[#23417e] mt-30 text-xl md:text-2xl"
+        style={{ fontFamily: "SFUILight" }}
       >
         Located in the heart of Toronto, we are a private international high
         school, which prepares students for fast entrance into Canadian and

@@ -111,14 +111,16 @@ function TopUniversity(props) {
       <div>
         <p
           style={{ fontFamily: props.top20 ? "SFUINormal" : "SFUIBold" }}
-          className={`${props.top20 ? "text-xs" : ""}`}
+          className={`${
+            props.top20 ? "text-xs lg:text-sm" : "text-sm lg:text-lg"
+          }`}
         >
           {props.uni.name}
         </p>
-        <p className="flex items-start gap-2 bottom-0 mt-5 text-left">
+        <p className="flex items-start gap-2 bottom-0 mt-5 text-left text-sm lg:text-lg">
           <span
             className={`${props.top10 ? "text-black" : "text-[#2d54a5]"} ${
-              props.top20 ? "text-2xl" : "text-4xl"
+              props.top20 ? "text-xl lg:text-2xl" : "text-3xl lg:text-4xl"
             }`}
             style={{ fontFamily: "SFUIBold" }}
           >
@@ -133,51 +135,67 @@ function TopUniversity(props) {
 function Stats() {
   return (
     <>
-      <div className="flex items-center w-[90%] m-auto">
-        <div className="rounded-full bg-[rgb(105,126,167)] w-[20%] aspect-square flex flex-col justify-center items-center">
+      <div className="py-10 flex flex-col md:flex-row items-center justify-around w-full m-auto gap-10 text-center">
+        <div className="rounded-full bg-[rgb(105,126,167)]  aspect-square flex flex-col justify-center items-center">
           <h2
-            className="text-5xl text-white"
+            className="text-4xl lg:text-5xl text-white"
             style={{ fontFamily: "SFUIBold" }}
           >
             98%
           </h2>
-          <p className="text-white text-0.5xl">
+          <p className="text-white text-sm lg:text-xl">
             Graduates accepted into colleges and universities by August 2024
           </p>
         </div>
         <div
-          className="text-[#23417e] text-6xl "
+          className="text-[#23417e] text-3xl lg:text-6xl w-full lg:w-auto px-5"
           style={{ fontFamily: "SFUIBold" }}
         >
           Top Five Universities In Canada
         </div>
-        <div className="rounded-full p-5 bg-[rgb(105,126,167)] w-[20%] aspect-square flex flex-col justify-center items-center">
+        <div className="rounded-full bg-[rgb(105,126,167)]  aspect-square flex flex-col justify-center items-center">
           <h2
-            className="text-5xl text-white"
+            className="text-4xl lg:text-5xl text-white "
             style={{ fontFamily: "SFUIBold" }}
           >
             95%
           </h2>
-          <p className="text-white text-0.5xl">
+          <p className="text-white text-sm lg:text-xl">
             Graduates will enroll in colleges and universities across North
             America
           </p>
         </div>
       </div>
-      <div className="flex justify-around mt-20">
+      <div className="grid grid-rows-3 grid-cols-2 md:grid-rows-1 md:grid-cols-5 gap-5 justify-around mt-20">
         {topuniversitiesData.map((university, index) => {
-          return <TopUniversity key={index} uni={university} />;
+          const isLast = index === topuniversitiesData.length - 1;
+          return (
+            <div
+              key={index}
+              className={`${isLast ? "col-span-2 md:col-span-1" : ""}`}
+            >
+              <TopUniversity uni={university} />
+            </div>
+          );
         })}
       </div>
       <h1
-        className="text-[#23417e] text-4xl "
+        className="text-[#23417e] text-3xl sm:text-4xl mt-20 "
         style={{ fontFamily: "SFUIBold" }}
       >
         TOP 10 UNIVERSITIES IN CANADA
       </h1>
-      <div className="flex justify-around w-[75%] m-auto mt-20">
+      <div className="grid grid-rows-3 grid-cols-2 md:grid-rows-1 md:grid-cols-5 gap-5 justify-around mt-20">
         {top10CanadaData.map((uni, index) => {
-          return <TopUniversity key={index} uni={uni} top10={true} />;
+          const isLast = index === top10CanadaData.length - 1;
+          return (
+            <div
+              key={index}
+              className={`${isLast ? "col-span-2 md:col-span-1" : ""}`}
+            >
+              <TopUniversity key={index} uni={uni} top10={true} />
+            </div>
+          );
         })}
       </div>
       <h1
@@ -186,14 +204,20 @@ function Stats() {
       >
         TOP 20 UNIVERSITIES IN CANADA
       </h1>
-      <div className="flex justify-around m-auto mt-20">
+      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-5 mt-20">
         {top20CanadaData.map((uni, index) => {
+          const isLast = index === top20CanadaData.length - 1;
           return (
-            <TopUniversity key={index} uni={uni} top10={true} top20={true} />
+            <div
+              key={index}
+              className={`w-full ${isLast ? "col-span-3 md:col-span-1" : ""}`}
+            >
+              <TopUniversity uni={uni} top10={true} top20={true} />
+            </div>
           );
         })}
       </div>
-      <div className="flex mt-20 items-center justify-around">
+      <div className="flex flex-col lg:flex-row gap-20 mt-20 items-center justify-around">
         <div className="w-[50%]">
           <div>
             <div className="grid grid-cols-4">
