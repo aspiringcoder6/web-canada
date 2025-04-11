@@ -52,7 +52,7 @@ export default function Testimonials() {
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center gap-30 justify-center">
-          <div className="w-full max-w-1/2 h-100 bg-gradient-to-b from-[#2b4170] to-white rounded-2xl flex items-center justify-center shadow-lg border-3 border-[#2b4170] relative"
+          <div className="w-5/6 lg:max-w-1/2 h-100 bg-gradient-to-b from-[#2b4170] to-white rounded-2xl flex items-center justify-center shadow-lg border-3 border-[#2b4170] relative"
                 style={{
                     backgroundImage: "url('/assets/images/ielts1.jpg'), linear-gradient(to bottom, #2b4170, white)",
                     backgroundBlendMode: "overlay",
