@@ -35,7 +35,9 @@ export default function Navbar() {
         Camp Programs
       </a>
       <a className="nav-link">Programs Fee</a>
-      <a className="nav-link">Student Services</a>
+      <a className="nav-link" href="student-service">
+        Student Services
+      </a>
     </>
   );
 
