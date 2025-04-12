@@ -51,7 +51,7 @@ const RegistrationForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-3xl mx-auto p-6 border-1 rounded-md shadow bg-white border-[#23417e] text-[#23417e] text-left"
+      className="w-9/10 max-w-3xl mx-auto p-6 border-1 rounded-md shadow bg-white border-[#23417e] text-[#23417e] text-left"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>

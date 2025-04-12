@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         custom: ["SFUIBold", "sans-serif"],
+        waterfall: ["Waterfall", "cursive"],
       },
       backgroundClip: ["text"],
     },
