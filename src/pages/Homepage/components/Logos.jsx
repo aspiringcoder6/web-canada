@@ -204,7 +204,7 @@ function Stats() {
       >
         TOP 20 UNIVERSITIES IN CANADA
       </h1>
-      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-5 mt-20">
+      <div className="grid grid-cols-3 items-start md:grid-cols-5 2xl:grid-cols-10 gap-35 mt-20">
         {top20CanadaData.map((uni, index) => {
           const isLast = index === top20CanadaData.length - 1;
           return (

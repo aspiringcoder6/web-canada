@@ -82,7 +82,7 @@ export default function Navbar() {
             <div className="lg:hidden flex flex-col px-5 pb-3 space-y-3 text-[#697ea7]">
               {navLinks}
             </div>
-            <button className="flex items-center m-auto gap-1 text-[#23417e] border border-[#23417e] py-2 px-5 rounded-3xl transition-all duration-300 group hover:text-white hover:bg-[#23417e]">
+            <button className="hidden max-lg:flex  items-center m-auto gap-1 text-[#23417e] border border-[#23417e] py-2 px-5 rounded-3xl transition-all duration-300 group hover:text-white hover:bg-[#23417e]">
               <img
                 src="/assets/images/globe.svg"
                 className="w-5 h-5 group-hover:invert group-hover:brightness-0 group-hover:contrast-100"

@@ -56,7 +56,7 @@ export default function Footer() {
           src="/assets/images/footerleaf.png"
           className="absolute -bottom-20 -right-20"
         />
-        <div className="flex justify-between w-full border-t-[#D9DBE9] border-t-2 py-5 mt-5 text-[#6F6C90] text-xl">
+        <div className="flex justify-between w-full border-t-[#D9DBE9] border-t-2 py-5 mt-5 text-[#6F6C90] max-sm:text-[0.7rem] max-md:text-xs max-lg:flex-col lg:text-lg xl:text-xl">
           <p>Copyright © 2025 Oxford College of Canada</p>
           <p>
             All Rights Reserved |
